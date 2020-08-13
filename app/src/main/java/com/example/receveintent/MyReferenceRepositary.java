@@ -10,7 +10,7 @@ import static com.example.receveintent.MyReferenceRoomDatabase.getDatabase;
 public class MyReferenceRepositary {
 
     private MyReferenceDao myReferenceDao;
-    public List<MyReference> myReferenceList;
+    public List<MyReference> myReferenceList=new ArrayList<>();
     //Here db is object of MyRDB clas inwhich it will provide to acces the  Dao();
     MyReferenceRepositary(Application application)
     {
@@ -33,7 +33,9 @@ public class MyReferenceRepositary {
 
 
     List<MyReference> getAllData() {
-        myReferenceList = myReferenceDao.getAllData();
+        if(myReferenceDao.getAllData()!=null) {
+            myReferenceList = myReferenceDao.getAllData();
+        }
         return myReferenceList;
     }
 }

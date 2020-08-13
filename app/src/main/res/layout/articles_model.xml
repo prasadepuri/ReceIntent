@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:cardElevation="8dp"
+    android:id="@+id/cardview"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/relativelayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:shadowColor="@android:color/darker_gray"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:layout_marginLeft="7dp"
+        android:fontFamily="@font/roboto"
+        android:text="I am ok"
+        android:layout_marginTop="7dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/foryouImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/deafult_news_icon"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+       </LinearLayout>
+        <TextView
+            android:id="@+id/date"
+            android:textSize="12sp"
+            android:layout_marginLeft="7dp"
+            android:text="h122213233322"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

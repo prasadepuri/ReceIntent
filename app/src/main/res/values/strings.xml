@@ -13,4 +13,7 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
+    <string name="my_preference_key">new</string>
+    <string name="my_preference">default</string>
+    <string name="my_preference_topic">currenttopic</string>
 </resources>
